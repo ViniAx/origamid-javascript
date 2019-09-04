@@ -59,11 +59,11 @@ function initScroll() {
 }
 
 function initAnimation() {
-  const $section = document.querySelectorAll('.js-scroll');
+  const $sections = document.querySelectorAll('.js-scroll');
   const windowMetade = window.innerHeight * 0.5;
 
   function animaScroll() {
-    $section.forEach( item => {
+    $sections.forEach( item => {
       const sectionTop = item.getBoundingClientRect().top;
       const isSectionVinsible = ( sectionTop - windowMetade) < 0
       if(isSectionVinsible) {
@@ -74,8 +74,6 @@ function initAnimation() {
   window.addEventListener('scroll', animaScroll)
   animaScroll()
 }
-
-
 
 initTabNav()
 initAccordion()
