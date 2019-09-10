@@ -11,6 +11,8 @@ export default function initAnimation() {
         const isSectionVinsible = ( sectionTop - windowMetade) < 0
         if(isSectionVinsible) {
           item.classList.add('ativo');
+        } else if(item.classList.contains('ativo')) {
+          item.classList.remove('ativo')
         }
       })
     }
