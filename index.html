@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="js">
 
 <head>
   <meta charset="utf-8" />
@@ -18,7 +18,8 @@
 <body>
   <div class="grid-container">
     <nav class="menu" data-menu="suave">
-      <ul>
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
         <li><a class="ativo" href="#animais">Animais</a></li>
         <li data-dropdown><a href="sobre.html">Sobre</a>
           <ul class="dropdown-menu">
@@ -154,6 +155,28 @@
         <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.
         </dd>
       </dl>
+    </section>
+
+    <section class="grid-section numeros" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="numeros-grid">
+        <div class="numero-animal">
+          <h3>Lobos</h3>
+          <span data-numero>4874</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Raposas</h3>
+          <span data-numero>5898</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Esquilos</h3>
+          <span data-numero>10458</span>
+        </div>
+        <div class="numero-animal">
+          <h3>Ursos</h3>
+          <span data-numero>2879</span>
+        </div>
+      </div>
     </section>
 
     <section class="grid-section contato" data-anime="scroll" id="contato">
