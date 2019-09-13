@@ -1,0 +1,24 @@
+{
+  "name": "origamid-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniAx/origamid-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViniAx/origamid-javascript/issues"
+  },
+  "homepage": "https://github.com/ViniAx/origamid-javascript#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-improved": "^4.0.13"
+  }
+}

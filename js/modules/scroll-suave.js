@@ -8,7 +8,7 @@ export default function initScroll() {
 
     section.scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
+      block: 'start',
     })
 
     // Forma alternativa
@@ -19,7 +19,7 @@ export default function initScroll() {
     // })
   }
 
-  $links.forEach( item => {
+  $links.forEach((item) => {
     item.addEventListener('click', scrollToSection);
   })
 }
