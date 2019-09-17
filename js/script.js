@@ -3,9 +3,9 @@ import Modal from './modules/modal.js'
 import ScrollSuave from './modules/scroll-suave.js'
 import TabNav from './modules/tabnav.js'
 import Tooltip from './modules/tooltip.js'
+import fetchAnimais from './modules/fetch-animais.js'
 import initAnimation from './modules/scroll-animacao.js'
 import initDropDown from './modules/dropdown.js'
-import initFetchAnimais from './modules/fetch-animais.js'
 import initFetchBitcoin from './modules/fetch-bitcoin.js'
 import initFuncionamento from './modules/funcionamento.js'
 import initMenuMobile from './modules/menu-mobile.js'
@@ -30,5 +30,6 @@ initAnimation()
 initDropDown()
 initMenuMobile()
 initFuncionamento()
-initFetchAnimais()
 initFetchBitcoin()
+
+fetchAnimais('../../animaisapi.json', '.numeros-grid')
