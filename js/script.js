@@ -1,5 +1,6 @@
 import Accordion from './modules/accordion.js'
 import DropDown from './modules/dropdown.js'
+import MenuMobile from './modules/menu-mobile.js'
 import Modal from './modules/modal.js'
 import ScrollAnima from './modules/scroll-anima.js'
 import ScrollSuave from './modules/scroll-suave.js'
@@ -8,7 +9,6 @@ import Tooltip from './modules/tooltip.js'
 import fetchAnimais from './modules/fetch-animais.js'
 import fetchBitcoin from './modules/fetch-bitcoin.js'
 import initFuncionamento from './modules/funcionamento.js'
-import initMenuMobile from './modules/menu-mobile.js'
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"] ')
 scrollSuave.init()
@@ -31,7 +31,9 @@ scrollAnima.init()
 const dropDown = new DropDown('[data-dropdown]')
 dropDown.init()
 
-initMenuMobile()
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]')
+menuMobile.init()
+
 initFuncionamento()
 
 fetchAnimais('../../animaisapi.json', '.numeros-grid')
