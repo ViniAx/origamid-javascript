@@ -1,11 +1,11 @@
 import Accordion from './modules/accordion.js'
 import Modal from './modules/modal.js'
+import ScrollAnima from './modules/scroll-anima.js'
 import ScrollSuave from './modules/scroll-suave.js'
 import TabNav from './modules/tabnav.js'
 import Tooltip from './modules/tooltip.js'
 import fetchAnimais from './modules/fetch-animais.js'
 import fetchBitcoin from './modules/fetch-bitcoin.js'
-import initAnimation from './modules/scroll-animacao.js'
 import initDropDown from './modules/dropdown.js'
 import initFuncionamento from './modules/funcionamento.js'
 import initMenuMobile from './modules/menu-mobile.js'
@@ -25,7 +25,9 @@ modal.init()
 const toolTip = new Tooltip('[data-tooltip]')
 toolTip.init()
 
-initAnimation()
+const scrollAnima = new ScrollAnima('[data-anime="scroll"]')
+scrollAnima.init()
+
 initDropDown()
 initMenuMobile()
 initFuncionamento()
